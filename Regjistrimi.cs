@@ -45,14 +45,7 @@ namespace AutosalloniBlendi
         {
             Application.Exit();
         }
-
-        public bool checkInputIfEmpty(Object input, string inputValue)
-        {
-            if (inputValue == null || inputValue == "") {
-                DialogResult dialogResult = MessageBox.Show(input.ToString + "eshte e thate!", "FieldInput", MessageBoxButtons.OK);
-                return true;
-            }
-        }
+ 
 
         public bool checkEmailValid(string email)
         {
