@@ -172,7 +172,6 @@
             label4.Size = new Size(66, 21);
             label4.TabIndex = 18;
             label4.Text = "Email-i";
-            label4.Click += this.label4_Click;
             // 
             // emailRegisterInput
             // 
@@ -180,7 +179,6 @@
             emailRegisterInput.Name = "emailRegisterInput";
             emailRegisterInput.Size = new Size(200, 23);
             emailRegisterInput.TabIndex = 17;
-            emailRegisterInput.TextChanged += emailRegisterInput_TextChanged;
             // 
             // label5
             // 

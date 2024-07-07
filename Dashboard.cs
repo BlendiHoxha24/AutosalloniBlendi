@@ -12,9 +12,10 @@ namespace AutosalloniBlendi
 {
     public partial class Dashboard : Form
     {
-        public Dashboard()
+        public Dashboard(string loginUsername)
         {
             InitializeComponent();
+            usernameLabel.Text = loginUsername;
         }
     }
 }
