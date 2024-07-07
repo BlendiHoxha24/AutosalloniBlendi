@@ -176,6 +176,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Kycja";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Kycja";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
