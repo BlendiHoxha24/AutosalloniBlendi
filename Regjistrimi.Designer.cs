@@ -56,11 +56,11 @@
             // 
             kycuLabel.AutoSize = true;
             kycuLabel.BackColor = Color.Transparent;
-            kycuLabel.Font = new Font("Segoe UI", 36F, FontStyle.Bold);
+            kycuLabel.Font = new Font("Bernard MT Condensed", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             kycuLabel.ForeColor = Color.White;
-            kycuLabel.Location = new Point(437, 25);
+            kycuLabel.Location = new Point(457, 30);
             kycuLabel.Name = "kycuLabel";
-            kycuLabel.Size = new Size(288, 65);
+            kycuLabel.Size = new Size(247, 57);
             kycuLabel.TabIndex = 7;
             kycuLabel.Text = "Regjistrohu";
             // 
@@ -68,11 +68,12 @@
             // 
             goBackButton.BackColor = Color.DarkOrange;
             goBackButton.FlatStyle = FlatStyle.Flat;
+            goBackButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             goBackButton.Location = new Point(1056, 12);
             goBackButton.Name = "goBackButton";
             goBackButton.Size = new Size(116, 36);
             goBackButton.TabIndex = 8;
-            goBackButton.Text = "Kthehu Mbrapa";
+            goBackButton.Text = " Mbrapa";
             goBackButton.UseVisualStyleBackColor = false;
             goBackButton.Click += goBackButton_Click;
             // 
@@ -80,6 +81,7 @@
             // 
             closeButton.BackColor = Color.DarkOrange;
             closeButton.FlatStyle = FlatStyle.Flat;
+            closeButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             closeButton.Location = new Point(1057, 54);
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(116, 36);
@@ -92,6 +94,7 @@
             // 
             registerButton.BackColor = Color.DarkOrange;
             registerButton.FlatStyle = FlatStyle.Flat;
+            registerButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             registerButton.Location = new Point(519, 541);
             registerButton.Name = "registerButton";
             registerButton.Size = new Size(116, 36);
@@ -104,11 +107,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 14F);
+            label2.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(370, 181);
+            label2.Location = new Point(370, 232);
             label2.Name = "label2";
-            label2.Size = new Size(101, 25);
+            label2.Size = new Size(99, 21);
             label2.TabIndex = 14;
             label2.Text = "Fjalekalimi";
             // 
@@ -116,17 +119,17 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
             label1.Location = new Point(369, 144);
             label1.Name = "label1";
-            label1.Size = new Size(102, 25);
+            label1.Size = new Size(100, 21);
             label1.TabIndex = 13;
             label1.Text = "Perdoruesi";
             // 
             // passwordRegisterInput
             // 
-            passwordRegisterInput.Location = new Point(575, 186);
+            passwordRegisterInput.Location = new Point(575, 237);
             passwordRegisterInput.Name = "passwordRegisterInput";
             passwordRegisterInput.Size = new Size(200, 23);
             passwordRegisterInput.TabIndex = 12;
@@ -143,17 +146,17 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 14F);
+            label3.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(369, 229);
+            label3.Location = new Point(369, 274);
             label3.Name = "label3";
-            label3.Size = new Size(185, 25);
+            label3.Size = new Size(185, 21);
             label3.TabIndex = 16;
             label3.Text = "Konfirmo Fjalkalimin";
             // 
             // confirmPasswordInput
             // 
-            confirmPasswordInput.Location = new Point(575, 231);
+            confirmPasswordInput.Location = new Point(575, 276);
             confirmPasswordInput.Name = "confirmPasswordInput";
             confirmPasswordInput.Size = new Size(200, 23);
             confirmPasswordInput.TabIndex = 15;
@@ -162,30 +165,32 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 14F);
+            label4.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(369, 274);
+            label4.Location = new Point(369, 189);
             label4.Name = "label4";
-            label4.Size = new Size(71, 25);
+            label4.Size = new Size(66, 21);
             label4.TabIndex = 18;
             label4.Text = "Email-i";
+            label4.Click += this.label4_Click;
             // 
             // emailRegisterInput
             // 
-            emailRegisterInput.Location = new Point(575, 276);
+            emailRegisterInput.Location = new Point(575, 191);
             emailRegisterInput.Name = "emailRegisterInput";
             emailRegisterInput.Size = new Size(200, 23);
             emailRegisterInput.TabIndex = 17;
+            emailRegisterInput.TextChanged += emailRegisterInput_TextChanged;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI", 14F);
+            label5.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
             label5.Location = new Point(369, 317);
             label5.Name = "label5";
-            label5.Size = new Size(152, 25);
+            label5.Size = new Size(149, 21);
             label5.TabIndex = 20;
             label5.Text = "Numri i Telefonit";
             // 
@@ -200,11 +205,11 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI", 14F);
+            label6.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
             label6.Location = new Point(369, 355);
             label6.Name = "label6";
-            label6.Size = new Size(70, 25);
+            label6.Size = new Size(66, 21);
             label6.TabIndex = 22;
             label6.Text = "Adresa";
             // 
@@ -219,36 +224,40 @@
             // 
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI", 14F);
+            label7.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
             label7.Location = new Point(370, 397);
             label7.Name = "label7";
-            label7.Size = new Size(61, 25);
+            label7.Size = new Size(58, 21);
             label7.TabIndex = 23;
             label7.Text = "Gjinia";
             // 
             // genderMaleButton
             // 
             genderMaleButton.AutoSize = true;
+            genderMaleButton.BackColor = Color.Transparent;
+            genderMaleButton.ForeColor = Color.White;
             genderMaleButton.Location = new Point(575, 403);
             genderMaleButton.Name = "genderMaleButton";
             genderMaleButton.Size = new Size(73, 19);
             genderMaleButton.TabIndex = 24;
             genderMaleButton.TabStop = true;
             genderMaleButton.Text = "Mashkull";
-            genderMaleButton.UseVisualStyleBackColor = true;
+            genderMaleButton.UseVisualStyleBackColor = false;
             // 
             // genderFemaleButton
             // 
             genderFemaleButton.AutoCheck = false;
             genderFemaleButton.AutoSize = true;
+            genderFemaleButton.BackColor = Color.Transparent;
+            genderFemaleButton.ForeColor = Color.White;
             genderFemaleButton.Location = new Point(667, 403);
             genderFemaleButton.Name = "genderFemaleButton";
             genderFemaleButton.Size = new Size(58, 19);
             genderFemaleButton.TabIndex = 25;
             genderFemaleButton.TabStop = true;
             genderFemaleButton.Text = "Femer";
-            genderFemaleButton.UseVisualStyleBackColor = true;
+            genderFemaleButton.UseVisualStyleBackColor = false;
             // 
             // dateOfBirthRegisterInput
             // 
@@ -261,11 +270,11 @@
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Segoe UI", 14F);
+            label8.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.White;
             label8.Location = new Point(369, 436);
             label8.Name = "label8";
-            label8.Size = new Size(126, 25);
+            label8.Size = new Size(123, 21);
             label8.TabIndex = 27;
             label8.Text = "Data e lindjes";
             // 
@@ -300,6 +309,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Regjistrimi";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Regjistrimi";
             ResumeLayout(false);
             PerformLayout();

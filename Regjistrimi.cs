@@ -45,7 +45,7 @@ namespace AutosalloniBlendi
         {
             Application.Exit();
         }
- 
+
 
         public bool checkEmailValid(string email)
         {
@@ -61,6 +61,11 @@ namespace AutosalloniBlendi
                 dialogResult = MessageBox.Show("Ky email eshte invalide! Sigurohuni qe email-i permban @ dhe top level domain (.com, .net etj)", "Invalid Email", MessageBoxButtons.OK);
                 return false;
             }
+        }
+
+        private void emailRegisterInput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
