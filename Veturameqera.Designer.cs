@@ -1,6 +1,6 @@
 ﻿namespace AutosalloniBlendi
 {
-    partial class Dashboard
+    partial class Veturameqera
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Veturameqera));
             groupBox1 = new GroupBox();
             button5 = new Button();
             button4 = new Button();
@@ -38,11 +38,8 @@
             closeButton = new Button();
             usernameLabel = new Label();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            label1 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -56,10 +53,10 @@
             groupBox1.Controls.Add(closeButton);
             groupBox1.Controls.Add(usernameLabel);
             groupBox1.Controls.Add(pictureBox1);
-            groupBox1.Location = new Point(9, 6);
+            groupBox1.Location = new Point(12, 14);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(200, 590);
-            groupBox1.TabIndex = 0;
+            groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
@@ -158,62 +155,35 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(218, 114);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(954, 482);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Britannic Bold", 17.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(234, 28);
-            label1.Name = "label1";
-            label1.Size = new Size(920, 52);
-            label1.TabIndex = 2;
-            label1.Text = "Autosalloni Blendi ju ofron një përzgjedhje të shkëlqyer të makinave me cilësi të lartë \r\ndhe shërbim të jashtëzakonshëm për një eksperiencë të mrekullueshme të automobilizmit.";
-            // 
-            // Dashboard
+            // Veturameqera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1184, 616);
-            Controls.Add(label1);
-            Controls.Add(pictureBox2);
             Controls.Add(groupBox1);
             MaximizeBox = false;
-            MdiChildrenMinimizedAnchorBottom = false;
-            Name = "Dashboard";
+            MinimizeBox = false;
+            Name = "Veturameqera";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Dashboard";
+            Text = "Veturameqera";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private GroupBox groupBox1;
-        private PictureBox pictureBox1;
-        private Label usernameLabel;
         private Button button5;
         private Button button4;
         private Button button3;
         private Button button2;
         private Button button1;
         private Button closeButton;
-        private PictureBox pictureBox2;
-        private Label label1;
+        private Label usernameLabel;
+        private PictureBox pictureBox1;
     }
 }
