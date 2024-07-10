@@ -109,7 +109,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(370, 232);
+            label2.Location = new Point(370, 228);
             label2.Name = "label2";
             label2.Size = new Size(99, 21);
             label2.TabIndex = 14;
@@ -129,7 +129,7 @@
             // 
             // passwordRegisterInput
             // 
-            passwordRegisterInput.Location = new Point(575, 237);
+            passwordRegisterInput.Location = new Point(578, 228);
             passwordRegisterInput.Name = "passwordRegisterInput";
             passwordRegisterInput.Size = new Size(200, 23);
             passwordRegisterInput.TabIndex = 12;
@@ -137,7 +137,7 @@
             // userRegisterInput
             // 
             userRegisterInput.BackColor = Color.White;
-            userRegisterInput.Location = new Point(575, 144);
+            userRegisterInput.Location = new Point(578, 146);
             userRegisterInput.Name = "userRegisterInput";
             userRegisterInput.Size = new Size(200, 23);
             userRegisterInput.TabIndex = 11;
@@ -148,7 +148,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(369, 274);
+            label3.Location = new Point(369, 270);
             label3.Name = "label3";
             label3.Size = new Size(185, 21);
             label3.TabIndex = 16;
@@ -156,7 +156,7 @@
             // 
             // confirmPasswordInput
             // 
-            confirmPasswordInput.Location = new Point(575, 276);
+            confirmPasswordInput.Location = new Point(578, 269);
             confirmPasswordInput.Name = "confirmPasswordInput";
             confirmPasswordInput.Size = new Size(200, 23);
             confirmPasswordInput.TabIndex = 15;
@@ -167,7 +167,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(369, 189);
+            label4.Location = new Point(369, 186);
             label4.Name = "label4";
             label4.Size = new Size(66, 21);
             label4.TabIndex = 18;
@@ -175,7 +175,7 @@
             // 
             // emailRegisterInput
             // 
-            emailRegisterInput.Location = new Point(575, 191);
+            emailRegisterInput.Location = new Point(578, 187);
             emailRegisterInput.Name = "emailRegisterInput";
             emailRegisterInput.Size = new Size(200, 23);
             emailRegisterInput.TabIndex = 17;
@@ -186,7 +186,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(369, 317);
+            label5.Location = new Point(369, 312);
             label5.Name = "label5";
             label5.Size = new Size(149, 21);
             label5.TabIndex = 20;
@@ -194,7 +194,7 @@
             // 
             // phoneNumberRegisterInput
             // 
-            phoneNumberRegisterInput.Location = new Point(575, 319);
+            phoneNumberRegisterInput.Location = new Point(578, 310);
             phoneNumberRegisterInput.Name = "phoneNumberRegisterInput";
             phoneNumberRegisterInput.Size = new Size(200, 23);
             phoneNumberRegisterInput.TabIndex = 19;
@@ -205,7 +205,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(369, 355);
+            label6.Location = new Point(369, 354);
             label6.Name = "label6";
             label6.Size = new Size(66, 21);
             label6.TabIndex = 22;
@@ -213,7 +213,7 @@
             // 
             // addressRegisterInput
             // 
-            addressRegisterInput.Location = new Point(575, 357);
+            addressRegisterInput.Location = new Point(578, 351);
             addressRegisterInput.Name = "addressRegisterInput";
             addressRegisterInput.Size = new Size(200, 23);
             addressRegisterInput.TabIndex = 21;
@@ -224,7 +224,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(370, 397);
+            label7.Location = new Point(370, 395);
             label7.Name = "label7";
             label7.Size = new Size(58, 21);
             label7.TabIndex = 23;
@@ -235,7 +235,7 @@
             genderMaleButton.AutoSize = true;
             genderMaleButton.BackColor = Color.Transparent;
             genderMaleButton.ForeColor = Color.White;
-            genderMaleButton.Location = new Point(575, 403);
+            genderMaleButton.Location = new Point(578, 397);
             genderMaleButton.Name = "genderMaleButton";
             genderMaleButton.Size = new Size(73, 19);
             genderMaleButton.TabIndex = 24;
@@ -249,7 +249,7 @@
             genderFemaleButton.AutoSize = true;
             genderFemaleButton.BackColor = Color.Transparent;
             genderFemaleButton.ForeColor = Color.White;
-            genderFemaleButton.Location = new Point(667, 403);
+            genderFemaleButton.Location = new Point(670, 400);
             genderFemaleButton.Name = "genderFemaleButton";
             genderFemaleButton.Size = new Size(58, 19);
             genderFemaleButton.TabIndex = 25;

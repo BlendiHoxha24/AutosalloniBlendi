@@ -38,8 +38,13 @@
             closeButton = new Button();
             usernameLabel = new Label();
             pictureBox1 = new PictureBox();
+            dataGridView1 = new DataGridView();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -155,6 +160,50 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(218, 36);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(954, 150);
+            dataGridView1.TabIndex = 2;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.DarkOrange;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.Location = new Point(884, 541);
+            button6.Name = "button6";
+            button6.Size = new Size(180, 47);
+            button6.TabIndex = 24;
+            button6.Text = "Fshij";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            button7.BackColor = Color.DarkOrange;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button7.Location = new Point(647, 541);
+            button7.Name = "button7";
+            button7.Size = new Size(180, 47);
+            button7.TabIndex = 26;
+            button7.Text = "Ndrysho";
+            button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.DarkOrange;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button8.Location = new Point(386, 541);
+            button8.Name = "button8";
+            button8.Size = new Size(180, 47);
+            button8.TabIndex = 25;
+            button8.Text = "Regjistro ";
+            button8.UseVisualStyleBackColor = false;
+            // 
             // Veturameqera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -162,6 +211,10 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1184, 616);
+            Controls.Add(button7);
+            Controls.Add(button8);
+            Controls.Add(button6);
+            Controls.Add(dataGridView1);
             Controls.Add(groupBox1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -171,6 +224,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -185,5 +239,9 @@
         private Button closeButton;
         private Label usernameLabel;
         private PictureBox pictureBox1;
+        private DataGridView dataGridView1;
+        private Button button6;
+        private Button button7;
+        private Button button8;
     }
 }

@@ -16,5 +16,35 @@ namespace AutosalloniBlendi
         {
             InitializeComponent();
         }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void carOffersButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void carRentalButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void carPicturesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usersButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void goBackButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

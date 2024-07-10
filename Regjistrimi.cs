@@ -16,7 +16,7 @@ namespace AutosalloniBlendi
 {
     public partial class Regjistrimi : Form
     {
-        public string dbConnectionString = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Fresk\\source\\repos\\AutosalloniBlendi\\AutosalloniBlenidDB.mdf;Integrated Security=True";
+        public string dbConnectionString = @"Data Source=Blendi;Initial Catalog=AutosalloniBlendiDB;Integrated Security=True;Encrypt=False";
         public Regjistrimi()
         {
             InitializeComponent();
@@ -54,6 +54,7 @@ namespace AutosalloniBlendi
                 newUser.Password = registerPassword;
                 newUser.Email = registerEmail;
                 newUser.Address = registerAddress;
+                newUser.PhoneNumber = registerPhoneNumber;
                 newUser.DateCreated = DateTime.Now;
                 newUser.DateUpdated = DateTime.Now;
                 newUser.DateOfBirth = registerDOB;
@@ -63,22 +64,26 @@ namespace AutosalloniBlendi
 
                 conn.Open();
 
-                SqlCommand checkIfUserExists = new SqlCommand("SELECT * FROM Perdoruesi WHERE perdoruesi = @username AND fjalekalimi = @password");
+                MessageBox.Show(newUser.Username + newUser.Password);
+
+                SqlCommand checkIfUserExists = new SqlCommand("SELECT * FROM Perdoruesi WHERE perdoruesi = @username", conn);
                 checkIfUserExists.Parameters.AddWithValue("@username", newUser.Username);
-                checkIfUserExists.Parameters.AddWithValue("@password", newUser.Password);
 
                 SqlDataReader dataReader = checkIfUserExists.ExecuteReader();
 
                 if (dataReader.HasRows == true)
                 {
                     MessageBox.Show("Perdoruesi ekziston! Ju lutem kycuni rregullisht!");
+                    dataReader.Close();
                 }
                 else
                 {
+                    dataReader.Close();
+
                     SqlCommand insertNewUser = new SqlCommand(
                         "INSERT INTO Perdoruesi(" +
                         "perdoruesi," +
-                        "fjalekalimi," +
+                        "fjalkalimi," +
                         "email," +
                         "numriTelefonit," +
                         "adresa," +
@@ -98,7 +103,7 @@ namespace AutosalloniBlendi
                         "@dateUpdated" +
                         ")"
                         
-                        );
+                        , conn);
 
                     insertNewUser.Parameters.AddWithValue("@username", newUser.Username);
                     insertNewUser.Parameters.AddWithValue("@password", newUser.Password);
@@ -113,9 +118,6 @@ namespace AutosalloniBlendi
                     insertNewUser.ExecuteNonQuery();
 
                     MessageBox.Show("Perdoruesi u krijua!");
-                    this.Hide();
-                    Dashboard dashboard = new Dashboard(newUser.Username);
-                    dashboard.Show();
 
                     conn.Close();
                 }

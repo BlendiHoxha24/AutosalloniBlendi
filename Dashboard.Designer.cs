@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             groupBox1 = new GroupBox();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            closeButton = new Button();
+            goBackButton = new Button();
+            usersButton = new Button();
+            carPicturesButton = new Button();
+            carRentalButton = new Button();
+            carOffersButton = new Button();
+            homeButton = new Button();
             usernameLabel = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -48,12 +48,12 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.Transparent;
-            groupBox1.Controls.Add(button5);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(closeButton);
+            groupBox1.Controls.Add(goBackButton);
+            groupBox1.Controls.Add(usersButton);
+            groupBox1.Controls.Add(carPicturesButton);
+            groupBox1.Controls.Add(carRentalButton);
+            groupBox1.Controls.Add(carOffersButton);
+            groupBox1.Controls.Add(homeButton);
             groupBox1.Controls.Add(usernameLabel);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Location = new Point(9, 6);
@@ -63,77 +63,83 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
-            // button5
+            // goBackButton
             // 
-            button5.BackColor = Color.DarkOrange;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(6, 527);
-            button5.Name = "button5";
-            button5.Size = new Size(180, 47);
-            button5.TabIndex = 20;
-            button5.Text = "Kthehu mbrapa";
-            button5.UseVisualStyleBackColor = false;
+            goBackButton.BackColor = Color.DarkOrange;
+            goBackButton.FlatStyle = FlatStyle.Flat;
+            goBackButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            goBackButton.Location = new Point(6, 527);
+            goBackButton.Name = "goBackButton";
+            goBackButton.Size = new Size(180, 47);
+            goBackButton.TabIndex = 20;
+            goBackButton.Text = "Kthehu mbrapa";
+            goBackButton.UseVisualStyleBackColor = false;
+            goBackButton.Click += goBackButton_Click;
             // 
-            // button4
+            // usersButton
             // 
-            button4.BackColor = Color.DarkOrange;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(6, 320);
-            button4.Name = "button4";
-            button4.Size = new Size(180, 47);
-            button4.TabIndex = 19;
-            button4.Text = "Stafi";
-            button4.UseVisualStyleBackColor = false;
+            usersButton.BackColor = Color.DarkOrange;
+            usersButton.FlatStyle = FlatStyle.Flat;
+            usersButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            usersButton.Location = new Point(6, 320);
+            usersButton.Name = "usersButton";
+            usersButton.Size = new Size(180, 47);
+            usersButton.TabIndex = 19;
+            usersButton.Text = "Stafi";
+            usersButton.UseVisualStyleBackColor = false;
+            usersButton.Click += usersButton_Click;
             // 
-            // button3
+            // carPicturesButton
             // 
-            button3.BackColor = Color.DarkOrange;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(6, 267);
-            button3.Name = "button3";
-            button3.Size = new Size(180, 47);
-            button3.TabIndex = 18;
-            button3.Text = "Fotot e veturave ";
-            button3.UseVisualStyleBackColor = false;
+            carPicturesButton.BackColor = Color.DarkOrange;
+            carPicturesButton.FlatStyle = FlatStyle.Flat;
+            carPicturesButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            carPicturesButton.Location = new Point(6, 267);
+            carPicturesButton.Name = "carPicturesButton";
+            carPicturesButton.Size = new Size(180, 47);
+            carPicturesButton.TabIndex = 18;
+            carPicturesButton.Text = "Fotot e veturave ";
+            carPicturesButton.UseVisualStyleBackColor = false;
+            carPicturesButton.Click += carPicturesButton_Click;
             // 
-            // button2
+            // carRentalButton
             // 
-            button2.BackColor = Color.DarkOrange;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(6, 214);
-            button2.Name = "button2";
-            button2.Size = new Size(180, 47);
-            button2.TabIndex = 17;
-            button2.Text = "Vetura me qera";
-            button2.UseVisualStyleBackColor = false;
+            carRentalButton.BackColor = Color.DarkOrange;
+            carRentalButton.FlatStyle = FlatStyle.Flat;
+            carRentalButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            carRentalButton.Location = new Point(6, 214);
+            carRentalButton.Name = "carRentalButton";
+            carRentalButton.Size = new Size(180, 47);
+            carRentalButton.TabIndex = 17;
+            carRentalButton.Text = "Vetura me qera";
+            carRentalButton.UseVisualStyleBackColor = false;
+            carRentalButton.Click += carRentalButton_Click;
             // 
-            // button1
+            // carOffersButton
             // 
-            button1.BackColor = Color.DarkOrange;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(6, 161);
-            button1.Name = "button1";
-            button1.Size = new Size(180, 47);
-            button1.TabIndex = 16;
-            button1.Text = "Vetura ne shitje";
-            button1.UseVisualStyleBackColor = false;
+            carOffersButton.BackColor = Color.DarkOrange;
+            carOffersButton.FlatStyle = FlatStyle.Flat;
+            carOffersButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            carOffersButton.Location = new Point(6, 161);
+            carOffersButton.Name = "carOffersButton";
+            carOffersButton.Size = new Size(180, 47);
+            carOffersButton.TabIndex = 16;
+            carOffersButton.Text = "Vetura ne shitje";
+            carOffersButton.UseVisualStyleBackColor = false;
+            carOffersButton.Click += carOffersButton_Click;
             // 
-            // closeButton
+            // homeButton
             // 
-            closeButton.BackColor = Color.DarkOrange;
-            closeButton.FlatStyle = FlatStyle.Flat;
-            closeButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            closeButton.Location = new Point(6, 108);
-            closeButton.Name = "closeButton";
-            closeButton.Size = new Size(180, 47);
-            closeButton.TabIndex = 15;
-            closeButton.Text = "Ballina";
-            closeButton.UseVisualStyleBackColor = false;
+            homeButton.BackColor = Color.DarkOrange;
+            homeButton.FlatStyle = FlatStyle.Flat;
+            homeButton.Font = new Font("Britannic Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            homeButton.Location = new Point(6, 108);
+            homeButton.Name = "homeButton";
+            homeButton.Size = new Size(180, 47);
+            homeButton.TabIndex = 15;
+            homeButton.Text = "Ballina";
+            homeButton.UseVisualStyleBackColor = false;
+            homeButton.Click += homeButton_Click;
             // 
             // usernameLabel
             // 
@@ -207,12 +213,12 @@
         private GroupBox groupBox1;
         private PictureBox pictureBox1;
         private Label usernameLabel;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button closeButton;
+        private Button goBackButton;
+        private Button usersButton;
+        private Button carPicturesButton;
+        private Button carRentalButton;
+        private Button carOffersButton;
+        private Button homeButton;
         private PictureBox pictureBox2;
         private Label label1;
     }

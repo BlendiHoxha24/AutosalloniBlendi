@@ -1,11 +1,12 @@
 using AutosalloniBlendi.Models;
 using System.Data.SqlClient;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AutosalloniBlendi
 {
     public partial class Kycja : Form
     {
-        public string dbConnectionString = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Fresk\\source\\repos\\AutosalloniBlendi\\AutosalloniBlenidDB.mdf;Integrated Security=True";
+        public string dbConnectionString = @"Data Source=Blendi;Initial Catalog = AutosalloniBlendiDB; Integrated Security = True; Encrypt=False";
 
         public Kycja()
         {
@@ -22,7 +23,7 @@ namespace AutosalloniBlendi
                 SqlConnection conn = new SqlConnection(dbConnectionString);
                 conn.Open();
 
-                SqlCommand findUser = new SqlCommand("SELECT * FROM Perdoruesit WHERE perdoruesi = @username AND fjalekalimi = @password");
+                SqlCommand findUser = new SqlCommand("SELECT * FROM Perdoruesi WHERE perdoruesi = @username AND fjalkalimi = @password", conn);
                 findUser.Parameters.AddWithValue("@username", loginUsername);
                 findUser.Parameters.AddWithValue("@password", loginPassword);
 
